@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/JMStudiosJoe/AngularPractice/issues"
   },
-  "homepage": "https://github.com/JMStudiosJoe/AngularPractice#readme"
+  "homepage": "https://github.com/JMStudiosJoe/AngularPractice#readme",
+  "dependencies": {
+    "angular-ui-router": "^0.3.0",
+    "bower": "^1.7.9",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1"
+  }
 }
