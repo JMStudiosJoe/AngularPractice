@@ -1,0 +1,23 @@
+toast {
+  display: block;
+  position: absolute;
+
+  margin: auto;
+  right: 0;
+  left: 0;
+
+  height: 40px;
+  border: 1px solid color(yellow-1);
+  font-size: font-size(m);
+
+  text-align: center;
+
+  background-color: color(yellow-2);
+  opacity: 0;
+
+  transition: opacity 0.3s;
+}
+
+toast.shown {
+  opacity: 1;
+}

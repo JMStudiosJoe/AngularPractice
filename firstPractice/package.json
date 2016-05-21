@@ -20,6 +20,14 @@
     "angular-ui-router": "^0.3.0",
     "bower": "^1.7.9",
     "express": "^4.13.4",
-    "gulp": "^3.9.1"
+    "fs": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-uglify": "^1.5.3"
   }
 }
