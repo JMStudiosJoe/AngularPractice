@@ -8,7 +8,7 @@ app.get('/', function(req, res){
 	console.log("----------");
 	console.log(__dirname);
 	console.log("----------");
-	res.sendFile('public/index.html' , { root: __dirname });
+	res.sendFile('src/public/index.html' , { root: __dirname });
 });
 
 app.use(express.static('.'))

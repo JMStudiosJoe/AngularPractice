@@ -7,6 +7,7 @@ var sourcemaps = require('gulp-sourcemaps')
 
 gulp.task('watch', ['js'], function () {
   gulp.watch('src/**/*.js', ['js'])
+  gulp.watch('src/**/*.html')
 })
 
 gulp.task('js', function () {
