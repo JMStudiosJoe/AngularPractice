@@ -1,0 +1,7 @@
+<h1>directive connected</h1>
+
+<div ng-repeat="weather in jmsdata">
+	<img ng-src="{{weather.current_observation.image.url}}" />
+	<li>{{weather.current_observation.display_location.full}}</li>
+	
+</div>

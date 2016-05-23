@@ -4,16 +4,12 @@ app.controller('firstController', ['$scope','dataFactory', function($scope, data
 
 	$scope.hello = "joey";
 	$scope.remoteData="";
-	$scope.apiWeatherData ={};
+	$scope.apiWeatherData =[];
 	$scope.getD = function() 
 	{
-		console.log("4 years");
         dataFactory.getData().then(function (response) 
         {
-        	console.log("5 years");
             $scope.remoteData = response.data;
-
-
         }, 
         function (error) 
         {
@@ -26,9 +22,13 @@ app.controller('firstController', ['$scope','dataFactory', function($scope, data
     {
     	dataFactory.getWeatherData().then(function (response) 
         {
-        	console.log("weather daaata");
-            $scope.apiWeatherData = response.data;
-            console.log($scope.apiWeatherData);
+
+        	for(var wea = 0; wea < response.data.results.length; wea++) 
+        	{
+        		$scope.apiWeatherData.push(angular.fromJson(response.data.results[wea]));
+        	}
+
+            console.log($scope.apiWeatherData[0].current_observation);
 
         }, 
         function (error) 

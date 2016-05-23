@@ -16,7 +16,7 @@
         return $http.get(urlBase);
     };
     dataFactory.getWeatherData = function () {
-    	console.log("weather data");
+
         return $http.get(weatherURL);
     };
 
