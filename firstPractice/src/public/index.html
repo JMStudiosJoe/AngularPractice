@@ -2,14 +2,15 @@
 <!DOCTYPE html>
 <head>
 	<link rel="stylesheet" href='src/public/style.css' />
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">	
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js"></script>
 
 </head>
 <html ng-app="firstApp">
 
 <body ng-controller="firstController">
-	<div >
-		<h1>yes here Hello {{hello}}</h1>
+	<div class="center-block" >
+		<h1 class="center-block">yes here Hello {{hello}}</h1>
 		<first-one></first-one>
 		<button ng-click="getD()">yes works</button>
 		<h1>{{remoteData}}</h1>

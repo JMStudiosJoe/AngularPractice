@@ -1,11 +1,20 @@
 #!flask/bin/python
+
+#http://flask.pocoo.org/docs/0.10/patterns/sqlalchemy/
+#http://flask-sqlalchemy.pocoo.org/2.1/
 import requests
 
 from flask import Flask, jsonify
+from flask.ext.sqlalchemy import SQLAlchemy
+from flask_alembic import Alembic
 
 app = Flask(__name__)
 
-
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'd+y7,8nf9F,w'
+app.config['MYSQL_DATABASE_DB'] = 'EmpData'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+db = SQLAlchemy(app)
 
 @app.route('/hello/world', methods = ['GET'])
 def index():

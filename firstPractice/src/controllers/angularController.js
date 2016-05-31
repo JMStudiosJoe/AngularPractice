@@ -1,5 +1,6 @@
-
-
+//A couple items on the checklist will be things like making directives that use isolated scopes with @ and =. Write two kinds of services... Factory and service (both are called services). Write a filter. 
+//A bit more advanced would be, look into writing a template function or a compile function.
+//I would recommend watching all the egghead angular videos until then if you have free time.
 app.controller('firstController', ['$scope','dataFactory', function($scope, dataFactory){
 
 	$scope.hello = "joey";
@@ -40,6 +41,6 @@ app.controller('firstController', ['$scope','dataFactory', function($scope, data
     }
 
 }]);
-app.config(function($logProvider){
-    $logProvider.debugEnabled(true);
-});
+// app.config(function($logProvider){
+//     $logProvider.debugEnabled(true);
+// });
